@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-theme {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #111;
+}
+.dark-theme img,
+.dark-theme iframe,
+.dark-theme canvas,
+.dark-theme [style*="background-image"] {
+  filter: invert(1) hue-rotate(180deg);
+}
