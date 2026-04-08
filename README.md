@@ -24,3 +24,31 @@ The heart of E-Flow is its dynamic Workflow Builder, which allows administrators
 - **Strict Document Governance:** The system enforces a strict PDF-only policy with a 10MB file size limit to ensure standardization and security across all uploads.
 - **Dynamic Dashboard:** Staff and students see customized dashboards that only show actions and data relevant to their specific permissions and current tasks.
 
+## 4. 👥 Bulk User Onboarding & "Magic Link" Authentication
+- **CSV Data Ingestion:** Administrators can upload CSV files to provision hundreds of users instantly. The backend strictly validates the parsed data.
+- **Magic Links:** Newly imported users receive a secure "Magic Link" via email to reset their passwords and activate their accounts without manual administrative overhead.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend:**
+- **React.js** for building a dynamic, interactive user interface.
+- **Vanilla CSS** with a focus on modern, vibrant aesthetics and micro-animations.
+- **react-signature-canvas** for seamless digital signature capture.
+
+**Backend:**
+- **Node.js & Express.js** for robust API development.
+- **PostgreSQL (`pg`)** for reliable relational data management.
+- **multer** for secure file handling and storage.
+- **pdf-lib & pdf-parse** for advanced PDF document processing.
+- **bcrypt & jsonwebtoken** for strict authentication and session management.
+- **nodemailer (Brevo SMTP)** for delivering critical OTPs and Magic Links.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- PostgreSQL database
