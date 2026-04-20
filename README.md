@@ -52,3 +52,51 @@ The heart of E-Flow is its dynamic Workflow Builder, which allows administrators
 ### Prerequisites
 - Node.js (v18+ recommended)
 - PostgreSQL database
+
+### Installation
+
+1. **Clone the repository and install dependencies:**
+
+   **Backend:**
+   ```bash
+   cd server
+   npm install
+   ```
+
+   **Frontend:**
+   ```bash
+   cd client
+   npm install
+   ```
+
+2. **Environment Configuration:**
+   - Create a `.env` file in the `server` directory.
+   - Configure your database connection string, JWT secret, and Brevo SMTP credentials.
+
+3. **Run the Application:**
+   
+   **Start the Backend:**
+   ```bash
+   cd server
+   npm run dev
+   ```
+
+   **Start the Frontend:**
+   ```bash
+   cd client
+   npm start
+   ```
+
+---
+
+## 🧪 Testing Accounts
+
+You can use the following pre-configured accounts to test different roles within the system:
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@example.com` | `123` |
+| **Staff** | `staff@example.com` | `123` |
+| **Staff 2** | `staff2@example.com` | `123` |
+| **Student** | `abebe@example.com` | `123` |
+
